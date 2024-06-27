@@ -1,9 +1,12 @@
 import "./App.css";
+import Cart from "./component/Cart";
+import Counter from "./component/Counter";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Counter />
+      <Cart />
     </>
   );
 }
