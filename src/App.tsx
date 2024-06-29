@@ -1,16 +1,19 @@
 import "./App.css";
-import Cart from "./component/Cart";
-import Counter from "./component/Counter";
-import LoginForm from "./component/LoginForm";
 import Todos from "./component/Todo";
+import WelcomeMesssage from "./component/WelcomeMesssage";
 
 function App() {
   return (
     <>
+      {/* <WelcomeMesssage
+        isLoggedIn={false}
+        user={{ name: "Mufleh", type: "guest" }}
+      /> */}
       <Todos />
-      {/* <Counter />
-      <Cart /> */}
-      <LoginForm />
+      <WelcomeMesssage
+        isLoggedIn={true}
+        user={{ name: "Danial", type: "guest" }}
+      />
     </>
   );
 }
