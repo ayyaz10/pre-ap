@@ -1,19 +1,11 @@
+import { useState } from "react";
 import "./App.css";
-import Todos from "./component/Todo";
-import WelcomeMesssage from "./component/WelcomeMesssage";
+import Counter from "./component/Counter";
 
 function App() {
   return (
     <>
-      {/* <WelcomeMesssage
-        isLoggedIn={false}
-        user={{ name: "Mufleh", type: "guest" }}
-      /> */}
-      <Todos />
-      <WelcomeMesssage
-        isLoggedIn={true}
-        user={{ name: "Danial", type: "guest" }}
-      />
+      <Counter />
     </>
   );
 }
