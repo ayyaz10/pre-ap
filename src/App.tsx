@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import Counter from "./component/Counter";
+
+import Todos from "./component/Todo";
 
 function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      <Todos />
     </>
   );
 }
