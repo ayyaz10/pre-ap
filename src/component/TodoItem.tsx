@@ -12,6 +12,7 @@ type TodoItemProps = {
 
 const TodoItem: FC<TodoItemProps> = ({ item, onDelete }) => {
   useEffect(() => {
+    s;
     console.log(`component rendered for item ${item.id}`);
 
     return () => {

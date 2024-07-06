@@ -28,6 +28,8 @@ const Todos = () => {
       id: 6,
     },
   ]);
+  const [todo, setTodo] = useState("");
+
   const deleteItem = (itemId: number) => {
     setTodos(
       todos.filter((itemEl) => {
@@ -40,17 +42,21 @@ const Todos = () => {
     setTodos((todos) => {
       return [
         {
-          text: "new Todo",
+          text: todo,
           id: Date.now(),
         },
         ...todos,
       ];
     });
   };
+  function handleTodo(e) {
+    setTodo(e.target.value);
+  }
 
   return (
     <ul>
       <li>
+        <input type="text" onChange={handleTodo} value={todo} />
         <button onClick={addNewTodo}>Click me to add new todo</button>
       </li>
       {todos.map((todoItem) => {
